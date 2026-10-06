@@ -1,0 +1,7 @@
+	Merge sort	Quick sort
+How	Split in the middle, sort both halves, then merge them	Pick a pivot, put smaller values left and bigger values right, then repeat on each side
+Time	Always O(n log n)	O(n log n) on average, O(n²) worst with a bad pivot
+Extra memory	O(n), needs extra lists	O(log n), sorts in place
+Stable?	Yes	No
+In practice	Predictable	Usually 2–3× faster
+Choose when	You need a guaranteed time or a stable sort	Memory is limited and average speed is enough

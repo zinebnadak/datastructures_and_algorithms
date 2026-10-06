@@ -1,0 +1,7 @@
+Algorithm	How it works (one line)	Best	Average / Worst	Stable?
+Bubble	Swap neighbours until the biggest values "bubble" to the end	O(n)	O(n²)	Yes
+Selection	Find the smallest value and put it first, then repeat	O(n²)	O(n²)	No
+Insertion	Take the next value and slide it into place, like sorting playing cards	O(n)	O(n²)	Yes
+Merge	Split in halves, sort each half, then merge them	O(n log n)	O(n log n)	Yes
+Quick	Pick a pivot, put smaller values left and bigger values right, then repeat on each side	O(n log n)	O(n log n) / O(n²)	No
+Heap	Build a max heap and take out the max n times	O(n log n)	O(n log n)	No
