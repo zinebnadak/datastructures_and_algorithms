@@ -57,3 +57,17 @@ sara_s = SkipNode("Sara", [None, None])
 erik_s = SkipNode("Erik", [sara_s])
 anna_s = SkipNode("Anna", [erik_s, sara_s])   # next[0]=Erik, next[1]=genväg till Sara
 print(anna_s.next[1].data)      # Sara, hoppade över Erik
+
+
+# STACK = LIFO (sist in, först ut)
+stack = []
+stack.append("A")    # push  O(1)
+stack.append("B")    # push  O(1)
+print(stack.pop())   # pop   O(1)  -> B
+
+# KÖ = FIFO (först in, först ut)
+from collections import deque
+queue = deque()
+queue.append("A")        # enqueue  O(1)
+queue.append("B")        # enqueue  O(1)
+print(queue.popleft())   # dequeue  O(1)  -> A
